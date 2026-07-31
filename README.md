@@ -25,9 +25,9 @@ reference rescue experiment"; **`a = 0`** means no catalytic activity (knockout)
 ## Install
 
 ```bash
-pip install git+https://github.com/OWNER/ADARIA.git
+pip install git+https://github.com/shizhuom/ADARIA.git
 # or, from a checkout:
-git clone https://github.com/OWNER/ADARIA.git && cd ADARIA && pip install .
+git clone https://github.com/shizhuom/ADARIA.git && cd ADARIA && pip install .
 ```
 
 Core dependencies are just `numpy`, `pandas`, `scipy`. The default HEK293T
