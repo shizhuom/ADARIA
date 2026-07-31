@@ -114,19 +114,6 @@ filtering on **coverage** does not remove those.
 defined by *that* signature's reference experiment). The signature used is
 recorded in `signature_id`.
 
-## Known limitations
-
-- **Panel-defined.** Activity is measured on the signature's loci — as AEI is
-  defined on Alu and CEI on 3′UTR inverted Alu. Random loss of loci costs
-  precision, not accuracy; *systematic* loss (e.g. by expression) can shift
-  estimates, so compare samples on a common set of covered anchors.
-- **Reported SEs are optimistic** (~8×): they come from a Laplace approximation
-  with a binomial likelihood and a signature treated as exact. Use them for
-  relative comparison and calibrate abstention thresholds accordingly.
-- **The signature is a plug-in** — its own estimation error is not propagated.
-- **`b0`** (zero-activity editing baseline, default 0.005) is a fixed constant;
-  lower it for signatures with much lower editing (`report()` will warn).
-
 ## Repository layout
 
 ```
